@@ -1,43 +1,38 @@
-<div align="center">
+# AkyuzIDE — Resmi Sürümler ve İndirme Merkezi
 
-# ⚡ AkyuzIDE — Resmi Sürümler ve İndirme Merkezi
+**RISC-V ve FPGA Geliştirme İçin Yapay Zeka Destekli Elektronik Tasarım Otomasyonu (EDA) IDE'si**
 
-**RISC-V & FPGA Geliştirme İçin Yapay Zeka Destekli Elektronik Tasarım Otomasyonu (EDA) IDE'si**
-
-[![Son Sürüm](https://img.shields.io/github/v/release/tahatahsinakyuz/AkyuzIDE-releases?style=for-the-badge&label=Son%20S%C3%BCr%C3%BCm&color=2563EB)](https://github.com/tahatahsinakyuz/AkyuzIDE-releases/releases/latest)
-[![Platform](https://img.shields.io/badge/Platform-Linux%20(AppImage%20%7C%20.deb)-FCC624?style=for-the-badge&logo=linux&logoColor=black)](https://github.com/tahatahsinakyuz/AkyuzIDE-releases/releases)
-
-</div>
+[Son Sürümü İndir (Releases)](https://github.com/tahatahsinakyuz/AkyuzIDE-releases/releases/latest) • [Tüm Sürümler](https://github.com/tahatahsinakyuz/AkyuzIDE-releases/releases)
 
 ---
 
-## 🎯 AkyuzIDE Nedir?
+## AkyuzIDE Nedir?
 
-**AkyuzIDE**, sayısal tasarım (Verilog HDL), **RISC-V** işlemci mimarisi ve **FPGA** geliştirme süreçlerini tek bir modern masaüstü ortamında birleştiren, entegre yapay zeka asistanına sahip özel amaçlı bir tümleşik geliştirme ortamıdır (IDE).
+**AkyuzIDE**, sayısal tasarım (Verilog HDL), **RISC-V** işlemci mimarisi ve **FPGA** geliştirme süreçlerini tek bir masaüstü ortamında birleştiren, entegre yapay zeka asistanına sahip özel amaçlı bir tümleşik geliştirme ortamıdır (IDE).
 
-Geleneksel donanım geliştirme araçlarının karmaşıklığını ortadan kaldırarak; kod yazımı, simülasyon, sentezleme, RISC-V derleme ve donanıma yükleme (flash) adımlarını yerel veya bulut tabanlı Büyük Dil Modelleri (LLM) ile hızlandırır.
+Geleneksel donanım geliştirme araçlarının karmaşıklığını azaltarak; kod yazımı, simülasyon, sentezleme, RISC-V derleme ve donanıma yükleme (flash) adımlarını yerel veya bulut tabanlı Büyük Dil Modelleri (LLM) ile hızlandırır.
 
 ---
 
-## ✨ Temel Özellikler
+## Temel Özellikler
 
-- 🤖 **Üç Modlu Yapay Zeka Ajanı (`Agent` / `Ask` / `Plan`):**
+- **Üç Modlu Yapay Zeka Ajanı (`Agent` / `Ask` / `Plan`):**
   - **Agent Modu:** Proje dosyalarını oluşturur, düzenler, simülasyon çalıştırır ve kullanıcı onayıyla (`Confirmation Flow`) güvenli değişiklikler yapar.
   - **Plan Modu:** Salt okunur araçlarla mevcut RTL/SoC mimarisini analiz eder ve adım adım tasarım planı çıkarır.
-  - **Ask Modu:** Verilog, RISC-V ISA ve FPGA zamanlama (timing) sorularına anında teknik yanıtlar üretir.
-  - **Çoklu Sağlayıcı Desteği:** Yerel **Ollama** (Qwen3 vb. modeller için özel düşünme/think filtresiyle) ve **OpenRouter** entegrasyonu.
-- 💻 **Özelleştirilmiş Monaco Editörü:** Verilog, SystemVerilog, RISC-V Assembly, C, Tcl ve Python için sözdizimi vurgulama ve proje ağacı yönetimi.
-- 🔬 **Entegre Simülasyon & EDA Araç Zinciri:**
-  - **Icarus Verilog (`iverilog` & `vvp`)** ile tek tıkla RTL simülasyonu ve testbench doğrulaması.
+  - **Ask Modu:** Verilog, RISC-V ISA ve FPGA zamanlama (timing) sorularına teknik yanıtlar üretir.
+  - **Çoklu Sağlayıcı Desteği:** Yerel **Ollama** (Qwen3 vb. modeller için özel düşünme filtresiyle) ve **OpenRouter** entegrasyonu.
+- **Özelleştirilmiş Monaco Editörü:** Verilog, SystemVerilog, RISC-V Assembly, C, Tcl ve Python için sözdizimi vurgulama ve proje ağacı yönetimi.
+- **Entegre Simülasyon ve EDA Araç Zinciri:**
+  - **Icarus Verilog (`iverilog` & `vvp`)** ile RTL simülasyonu ve testbench doğrulaması.
   - **Xilinx Vivado** proje başlatma (`init_project.tcl`), sentez, implementasyon ve bitstream üretimi paneli (`VivadoPanel`).
-- ⚙️ **RISC-V & C Derleyici Paneli (`CCompilerPanel`):** RISC-V Assembly ve C kodlarını makine koduna / bellek başlatma (`.mem` / `.hex`) formatlarına derleme.
-- 🔌 **Donanım & Seri Port Yönetimi (`HardwareSidebar`):** UART üzerinden FPGA kartlarıyla haberleşme, bootloader üzerinden program yükleme ve seri port izleme.
+- **RISC-V ve C Derleyici Paneli (`CCompilerPanel`):** RISC-V Assembly ve C kodlarını makine koduna ve bellek başlatma (`.mem` / `.hex`) formatlarına derleme.
+- **Donanım ve Seri Port Yönetimi (`HardwareSidebar`):** UART üzerinden FPGA kartlarıyla haberleşme, bootloader üzerinden program yükleme ve seri port izleme.
 
 ---
 
-## 📥 Kurulum (Linux)
+## Kurulum (Linux)
 
-En güncel sürüm paketlerini [**Releases**](https://github.com/tahatahsinakyuz/AkyuzIDE-releases/releases/latest) sayfasından indirebilirsiniz.
+Güncel sürüm paketlerini [Releases](https://github.com/tahatahsinakyuz/AkyuzIDE-releases/releases/latest) sayfasından indirebilirsiniz.
 
 ### Seçenek 1: Debian / Ubuntu / Mint (`.deb` Paketi)
 
@@ -59,9 +54,9 @@ chmod +x AkyuzIDE.AppImage
 
 ---
 
-## 🛠️ Önerilen Harici Araçlar
+## Önerilen Harici Araçlar
 
-AkyuzIDE'nin tüm donanım ve yapay zeka yeteneklerinden tam kapasiteyle yararlanmak için sisteminizde aşağıdaki araçların kurulu olması önerilir:
+AkyuzIDE'nin tüm donanım ve yapay zeka yeteneklerinden yararlanmak için sisteminizde aşağıdaki araçların kurulu olması önerilir:
 
 | Araç | Kullanım Amacı | Kurulum / Not |
 | :--- | :--- | :--- |
@@ -72,6 +67,6 @@ AkyuzIDE'nin tüm donanım ve yapay zeka yeteneklerinden tam kapasiteyle yararla
 
 ---
 
-## 📦 Sürüm Geçmişi
+## Sürüm Geçmişi
 
-Tüm sürümler ve otomatik güncelleme meta verileri (`latest-linux.yml`) için [**Releases**](https://github.com/tahatahsinakyuz/AkyuzIDE-releases/releases) sekmesini ziyaret edebilirsiniz.
+Tüm sürümler ve otomatik güncelleme meta verileri (`latest-linux.yml`) için [Releases](https://github.com/tahatahsinakyuz/AkyuzIDE-releases/releases) sekmesini ziyaret edebilirsiniz.
